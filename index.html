@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertidor de Divisas</title>
+    <link rel="icon" href="src/icon.png" />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Emoji&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="banner">
+      <img src="src/icon2.png" alt="Currency Exchange" class="icon" />
+    </div>
+
+    <div class="rect">
+      <div class="currency">
+        <p class="abrev">MXN</p>
+        <p class="name">Peso mexicano</p>
+        <p class="abrev">USD</p>
+        <p class="name">Dólar estadounidense</p>
+        <p class="abrev">EUR</p>
+        <p class="name">Euro</p>
+        <p class="abrev">GBP</p>
+        <p class="name">Libra esterlina</p>
+        <p class="abrev">JPY</p>
+        <p class="name">Yen japonés</p>
+        <p class="abrev">KRW</p>
+        <p class="name">Won sucoreano</p>
+      </div>
+
+      <div class="amount">
+        <span class="border">
+          <input type="text" value="00.00" class="money" />
+          $
+        </span>
+        <span class="border">
+          <input type="text" value="00.00" class="money" />
+          $
+        </span>
+        <span class="border">
+          <input type="text" value="00.00" class="money" />
+          €
+        </span>
+        <span class="border">
+          <input type="text" value="00.00" class="money" />
+          £
+        </span>
+        <span class="border">
+          <input type="text" value="00.00" class="money" />
+          ¥
+        </span>
+        <span class="border">
+          <input type="text" value="00.00" class="money" />
+          ₩
+        </span>
+      </div>
+    </div>
+
+    <div class="btn">
+      <button class="convert" onclick="exchange()" id="convBtn">
+        <span>Convertir</span>
+      </button>
+    </div>
+
+    <footer class="foot">
+      <p>© Challenge - Convertidor de Divisas</p>
+      <p>Por Daniel Rs</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+body {
+  height: 100%;
+  background: #292d3e;
+  font-size: 20px;
+  color: white;
+  font-family: "Inconsolata", monospace;
+}
+
+.banner {
+  background-image: url("src/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 400px;
+}
+
+.icon {
+  position: relative;
+  top: 50px;
+  left: 2.7%;
+  height: 18%;
+}
+
+.rect {
+  position: relative;
+  margin: -300px auto 40px auto;
+  width: 1024px;
+  height: 678px;
+  background-color: #181a1b;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.currency {
+  display: inline-block;
+  height: 496px;
+  width: 395px;
+  margin-top: 65px;
+  margin-left: 81px;
+  padding-top: 37px;
+  padding-left: 91px;
+}
+
+.abrev {
+  font-size: 36px;
+}
+
+.name {
+  margin-bottom: 15px;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 102px;
+  left: 649px;
+}
+
+.border {
+  margin-bottom: 16px;
+  height: 51px;
+  width: 200px;
+  background-color: #181a1b;
+  border: 1px solid #fff;
+  padding-left: 10px;
+  padding-top: 12px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.money {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  text-align: left;
+  font-size: 20px;
+  width: 56px;
+  max-width: 150px;
+  min-width: 40px;
+}
+
+.money:focus {
+  outline: none;
+}
+
+.money::selection {
+  background-color: #8b8b8b50;
+}
+
+.btn {
+  position: relative;
+  top: -140px;
+  display: flex;
+  justify-content: center;
+}
+
+.convert {
+  height: 50px;
+  width: 200px;
+  background-color: #19255b;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.convert span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.convert span:after {
+  font-family: "Noto Emoji", sans-serif;
+  font-size: 25px;
+  content: "\01F4B1"; /* simbolo que se mostrará  */
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  right: -40px; /* distancia del movimiento  */
+  transition: 0.5s;
+}
+
+.convert:hover span {
+  padding-right: 35px; /* distancia del simbolo al texto */
+}
+
+.convert:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.convert:active {
+  transition: 1.5s;
+  scale: 90%;
+  background-color: #121b41;
+}
+
+footer {
+  background-color: #0c0016;
+  text-align: center;
+  font-size: 16px;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
